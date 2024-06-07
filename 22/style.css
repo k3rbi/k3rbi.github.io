@@ -1,37 +1,49 @@
 html {
-  height: 100%;
-  width: 100%;
+  font-size: 24px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 header{
-  background: #829EB9;
-  height: 50px;
-  font-family: Arial;
-  text-align: center;
+  background-color: magenta;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 nav{
-  background: #B3C6D9;
-  height: 600px;
-  width: 25%;
+  background-color: navy;
+  height: 700px;
+  width: 30%;
   float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 main{
-  background: #E0E9F1;
-  height: 600px;
-  width: 75%;
-  text-align: center;
+  background-color: yellow;
+  height: 700px;
+  width: 40%;
   float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-img{
-  overflow-clip-margin: content-box;
-  overflow: clip;
+aside{
+  background-color: green;
+  height: 700px;
+  width: 30%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 footer{
-  background: #829EB9;
-  font-family: Arial;
-  text-align: right;
+  background-color: gray;
+  height: 111px;
   clear: both;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
