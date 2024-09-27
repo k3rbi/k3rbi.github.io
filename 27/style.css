@@ -1,0 +1,43 @@
+html>*{
+    font: Arial;
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    background-color: #1f061e;
+    color:white;
+}
+
+h1{
+    text-align: center;
+    padding: 50px 0;
+}
+main>div>p{
+    margin: 50px 20px;
+    padding:25px 50px;
+    background-color: #72126f;
+    border-radius:50px ;}
+
+main>div{
+    display: flex;
+    margin: 0 50px;
+}
+
+img{
+    width:40%;
+    border-radius: 20px;
+}
+main{
+    background-color: #7a1876;
+    height:100%;
+    height:90svh;
+    font-weight: 500;
+    font-size: 20px;
+}
+footer{
+    background-color: #1f061e;
+    text-align: right;
+
+}
+footer>p{
+    margin-right: 25px;
+}
