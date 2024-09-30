@@ -58,8 +58,8 @@
         define('PI', 3.14159);
         
         function kolo($r) {
-            $pole = PI * pow($radius, 2);
-            $obwod = 2 * PI * $radius;
+            $pole = PI * pow($r, 2);
+            $obwod = 2 * PI * $r;
             return [
                 'pole' => round($pole, 2),
                 'obwod' => round($obwod, 2)
