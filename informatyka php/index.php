@@ -24,15 +24,15 @@
     <h2>Zadanie 2</h2>
     <p>
         <?php
-        $lessThan100 = [];
-        $greaterThan100 = [];
+        $mniejsze100 = [];
+        $wieksze100 = [];
         for ($i = 1; $i <= 200; $i++) {
             if ($i % 5 == 0 && $i % 10 != 0) {
                 echo $i . "<br>";
                 if ($i < 100) {
-                    $lessThan100[] = $i;
+                    $mniejsze100[] = $i;
                 } else {
-                    $greaterThan100[] = $i;
+                    $wieksze100[] = $i;
                 }
             }
         }
@@ -45,7 +45,7 @@
         <table border="1">
             <?php
             for ($i = 1; $i <= 10; $i++) {
-                echo "<tr><td>$i</td><td>" . rand(1, 100) . "</td></tr>";
+                echo "<tr><td>$i losowanie</td><td>" . rand(1, 100) . "</td></tr>";
             }
             ?>
         </table>
@@ -57,18 +57,18 @@
         <?php
         define('PI', 3.14159);
         
-        function calculateCircle($radius) {
-            $area = PI * pow($radius, 2);
-            $circumference = 2 * PI * $radius;
+        function kolo($r) {
+            $pole = PI * pow($radius, 2);
+            $obwod = 2 * PI * $radius;
             return [
-                'area' => round($area, 2),
-                'circumference' => round($circumference, 2)
+                'pole' => round($pole, 2),
+                'obwod' => round($obwod, 2)
             ];
         }
         
-        $radius = 5;
-        $result = calculateCircle($radius);
-        echo "Pole koła o promieniu $radius wynosi " . $result['area'] . ", a obwód to " . $result['circumference'] . ".";
+        $r = 5;
+        $result = kolo($r);
+        echo "Pole koła o promieniu $r wynosi " . $result['pole'] . ", a obwód to " . $result['obwod'] . ".";
         ?>
     </p>
 
@@ -86,7 +86,7 @@
         $side1 = $_POST['side1'];
         $side2 = $_POST['side2'];
         
-        function checkRectangleOrSquare($a, $b) {
+        function koloczysq($a, $b) {
             if ($a == $b) {
                 return "Kwadrat o polu " . ($a * $b);
             } else {
@@ -94,7 +94,7 @@
             }
         }
 
-        echo checkRectangleOrSquare($side1, $side2);
+        echo koloczysq($side1, $side2);
     }
     ?>
     <p>Wprowadź wartości boków, aby sprawdzić, czy jest to kwadrat, czy prostokąt.</p>
@@ -104,8 +104,8 @@
     <p>
         <?php
         $names = ['Majewski', 98, "Bobek", 'Kowal', "Nowak", 125, 7643, "Malec", "Rygel", "Kelam", 79.34, "Ames", "Jarcz", "Pecawski", 2.02, "Dyka", "Zerat", "Lirec", 985, "Wyka"];
-        $allNamesCount = count($names);
-        echo "Ilość elementów w tablicy: $allNamesCount<br>";
+        $wszystkieim = count($names);
+        echo "Ilość elementów w tablicy: $wszystkieim<br>";
 
         $female = [];
         $men = [];
